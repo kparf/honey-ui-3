@@ -2,10 +2,16 @@ import AddressContainer from '../AddressContainer/AddressContainer';
 import PhonesContainer from '../PhonesContainer/PhonesContainer';
 
 
-const Header__Information = () => (
+const Header__Information = ({ phone, address }) => (
   <div className="Header__Information">
-    <AddressContainer property="address" icon={<img className="Header__InformationIcon" src="/static/icons/baseline-pin_drop-24px.svg"/>}/>
-    <PhonesContainer property="phone" icon={<img className="Header__InformationIcon" src="/static/icons/baseline-phone-24px.svg"/>}/>
+    <AddressContainer
+      address={address}
+      property="address"
+      icon={<img className="Header__InformationIcon" src="/static/icons/baseline-pin_drop-24px.svg"/>}/>
+    <PhonesContainer
+      phone={phone}
+      property="phone"
+      icon={<img className="Header__InformationIcon" src="/static/icons/baseline-phone-24px.svg"/>}/>
 
     <style jsx>{`
       .Header__Information {

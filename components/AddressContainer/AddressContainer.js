@@ -1,11 +1,13 @@
 import classnames from 'classnames';
 
-const AddressContainer = ({ className, property, icon }) => (
+const AddressContainer = ({ className, property, icon, address = [] }) => (
   <div className={ classnames(className, 'AddressContainer') }>
     { icon }
     <div className="AddressContainer__list header__list">
       Адрес:
-      <span property={property} mv-multiple mv-default="Адрес"></span>
+      {
+        address.map((item, index) => <span key={index} property={property} mv-multiple="true" mv-default="Адрес">{ item }</span>)
+      }
     </div>
 
 

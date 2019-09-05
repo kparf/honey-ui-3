@@ -4,9 +4,10 @@ const Layout = ({ children }) => (
   <div mv-app="honey" mv-storage="https://github.com/kparf/honey-data" mv-plugins="cropper">
     <Head>
       <title>Мёд</title>
-      <meta charset="UTF-8"/>
-      <script src="https://get.mavo.io/mavo.es5.min.js"></script>
-      <link rel="stylesheet" href="https://get.mavo.io/mavo.css"/>
+      <meta charSet="UTF-8"/>
+
+
+
       <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet"/>
     </Head>
     { children }
