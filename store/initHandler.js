@@ -1,7 +1,7 @@
 import { getInitData } from '../api';
 
 export const initHandler = initData => store => {
-  store.on('@init', () => { console.log('header'); console.log(initData.header); return initData; });
+  store.on('@init', () => initData);
 
   store.on('init/fetch-res', (state, newState) => newState);
 
