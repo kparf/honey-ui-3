@@ -1,16 +1,17 @@
 import Link from 'next/Link';
 
 
-const Navigation__Item = ({ href, label }) => (
+const Navigation__Item = ({ href, label, onMouseEnter, onMouseLeave }) => (
   <>
     <Link href={href}>
-      <a className="Navigation__Item">{label}</a>
+      <a onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="Navigation__Item">{label}</a>
     </Link>
 
 
     <style jsx>{`
       .Navigation__Item {
-        color: var(--app-main-color);
+        --decoration-color: #FFF;
+        color: var(--second-color, #FFF);
         text-decoration: none;
         margin: 10px;
         font-size: 1.5em;
