@@ -23,38 +23,33 @@ const Navigation = ({ className }) => {
     <div className={classnames("Navigation__wrapper", className)} ref={wrapper}>
       <nav className="Navigation">
         <ul className="Navigation__list">
-          <li>
-            <Navigation__Item
-              onMouseEnter={hoverHandler}
-              onMouseLeave={unHoverHandler}
-              href="/" label="Главная"/>
-          </li>
-          <li>
-            <Navigation__Item
-              onMouseEnter={hoverHandler}
-              onMouseLeave={unHoverHandler}
-              href="/products" label="Продукция"/>
-          </li>
-          <li>
-            <Navigation__Item
-              onMouseEnter={hoverHandler}
-              onMouseLeave={unHoverHandler}
-              href="/about" label="О Нас"/>
-          </li>
-          <li>
-            <Navigation__Item
-              onMouseEnter={hoverHandler}
-              onMouseLeave={unHoverHandler}
-              href="/contacts" label="Контакты"/>
-          </li>
+          <Navigation__Item
+            onMouseEnter={hoverHandler}
+            onMouseLeave={unHoverHandler}
+            href="/" label="Главная"/>
+          <Navigation__Item
+            onMouseEnter={hoverHandler}
+            onMouseLeave={unHoverHandler}
+            href="/products" label="Продукция"/>
+          <Navigation__Item
+            onMouseEnter={hoverHandler}
+            onMouseLeave={unHoverHandler}
+            href="/about" label="О Нас"/>
+          <Navigation__Item
+            onMouseEnter={hoverHandler}
+            onMouseLeave={unHoverHandler}
+            href="/contacts" label="Контакты"/>
         </ul>
       </nav>
   
       <style jsx>{`
           .Navigation {
+            --navigation-height: 50px;
             background-color: inherit;
+            height: var(--navigation-height, 70px);
           }
 
+/*
           .Navigation__wrapper:before {
             content: '';
             width: 100%;
@@ -85,6 +80,7 @@ const Navigation = ({ className }) => {
             transition: all 0.5s;
             transform: translateY(-1px);
           }
+          */
 
           .Navigation__wrapper {
             display: flex;
@@ -95,7 +91,7 @@ const Navigation = ({ className }) => {
             background-clip: content-box;
             width: 100%;
             box-sizing: border-box;
-            height: 70px;
+            height: var(--navigation-height, 70px)
             justify-content: center;
           }
 
@@ -106,19 +102,15 @@ const Navigation = ({ className }) => {
   
           .Navigation__list {
             display: flex;
+            height: var(--navigation-height, 70px);
             width: var(--page-width);
             list-style: none;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 0;
             margin: 0;
           }
 
-          @keyframes hoverItem {
-            0% {
-              border-width: 40px;
-            }
-          }
         `}</style>
     </div>
   );
