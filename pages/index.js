@@ -1,10 +1,13 @@
 import { initialisation } from '../store/init';
 import Layout from '../components/Layout/Layout';
 import Header from '../components/Header/Header';
+import Carusel from '../components/Carusel/Carusel';
+
 
 const Index = () => (
   <Layout>
     <Header/>
+    <Carusel property="slide"/>
   </Layout>
 )
 

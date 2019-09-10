@@ -4,7 +4,7 @@ import Header__Information from './Header__Information';
 
 const Header = ({ property="header" }) => {
 
-  const { dispatch, header } = useStoreon('header');
+  const { header } = useStoreon('header');
   const { phone, address } = header;
 
   return (
