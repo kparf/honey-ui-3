@@ -5,8 +5,8 @@ const DEFAULT_INNER_PROERTY_SET = {
   description: 'description',
 }
 
-const Products__Article = ({ value, property = "product", innerProperties }) => {
-  innerProperties = { ...DEFAULT_INNER_PROERTY_SET, innerProperties };
+const Products__Article = ({ value, property = "product", innerProperties = {} }) => {
+  innerProperties = { ...DEFAULT_INNER_PROERTY_SET, ...innerProperties };
 
   return (
     <article property={ property }

@@ -4,6 +4,7 @@ import Header from '../components/Header/Header';
 import Carusel from '../components/Carusel/Carusel';
 import Products from '../components/Products/Products';
 import Hello from '../components/Hello/Hello';
+import Footer from '../components/Footer/Footer';
 
 
 const Index = () => (
@@ -12,6 +13,7 @@ const Index = () => (
     <Carusel property="slide"/>
     <Products property="product"/>
     <Hello property="hello"/>
+    <Footer property="footer"/>
   </Layout>
 )
 
