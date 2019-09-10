@@ -4,12 +4,12 @@ const Carusel__Slide = ({ value, property = "slide", imageProperty = "image", te
     <img property={ imageProperty }
         className="Carusel__slide-image"
         mv-default="https://via.placeholder.com/200.png"
-        src={value.image}
+        src={value[imageProperty]}
         />
     <div className="Carusel__slide-text-container">
       <div className="Carusel__slide-text-wrapper">
         <div className="Carusel__slide-text">
-          <span property={ textProperty } mv-default="текст">{ value.text }</span>
+          <span property={ textProperty } mv-default="текст">{ value[textProperty] }</span>
         </div>
       </div>
     </div>
