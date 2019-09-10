@@ -3,6 +3,7 @@ import Layout from '../components/Layout/Layout';
 import Header from '../components/Header/Header';
 import Carusel from '../components/Carusel/Carusel';
 import Products from '../components/Products/Products';
+import Hello from '../components/Hello/Hello';
 
 
 const Index = () => (
@@ -10,6 +11,7 @@ const Index = () => (
     <Header/>
     <Carusel property="slide"/>
     <Products property="product"/>
+    <Hello property="hello"/>
   </Layout>
 )
 
