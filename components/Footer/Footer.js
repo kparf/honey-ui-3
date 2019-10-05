@@ -23,7 +23,9 @@ const Footer = ({ property = "footer", innerProperties= {} }) => {
     <footer property={ property }>
       <div className="Socials-container">
         {
-          social.value ? social.value.map((socialItem, index) => <Social property={ social.key } value={ socialItem }/>) : false
+          social.value
+            ? social.value.map((socialItem, index) => <Social key={ index } property={ social.key } value={ socialItem }/>) 
+            : false
         }
       </div>
 
