@@ -36,6 +36,7 @@ const Layout = ({ children }) => (
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+        background-attachment: fixed;
       }
     `}
     </style>
