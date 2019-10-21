@@ -5,12 +5,18 @@ import Header__Information from './Header__Information';
 const Header = ({ property="header" }) => {
 
   const { header } = useStoreon('header');
-  const { phone, address } = header;
+  const { phone, address, logo } = header;
+
+  console.log(header);
 
   return (
     <header className="Header" property={ property }>
       <div className="Header__container">
-        <img property="logo" src="https://via.placeholder.com/100.png" />
+        <img
+          property="logo"
+          mv-default="https://via.placeholder.com/100.png"
+          src={logo}
+          />
         <Header__Information phone={phone} address={address}/>
       </div>
       <Navigation />
