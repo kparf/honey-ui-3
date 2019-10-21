@@ -7,8 +7,6 @@ const Header = ({ property="header" }) => {
   const { header } = useStoreon('header');
   const { phone, address, logo } = header;
 
-  console.log(header);
-
   return (
     <header className="Header" property={ property }>
       <div className="Header__container">
