@@ -2,11 +2,12 @@ import useStoreon from 'storeon/react'
 import Products__Article from './Products__Article';
 
 
-const Products = ({ property, data }) => {
+const Products = ({ property, data, header }) => {
 
   return (
     <div className="Products">
       <section className="Products__section">
+        { header }
         <div className="Products__content">
           {
             data ? data.map( (product, index) => {

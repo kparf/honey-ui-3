@@ -4,14 +4,25 @@ import Layout from '../components/Layout/Layout';
 import Header from '../components/Header/Header';
 import ProductSection from '../components/Products/Products';
 import Footer from '../components/Footer/Footer';
+import Products__Header from '../components/Products/Products__Header';
+import OrderForm from '../components/OrderForm/OrderForm';
+import OrderForm__Header from '../components/OrderForm/OrderForm__Header';
 
 
 const Products = () => {
-  const { product } = useStoreon('product');
+  const productPage = useStoreon('products-page')['products-page'];
+  console.log(productPage);
   return (
     <Layout>
       <Header/>
-      <ProductSection property="product" data={product}/>
+      <ProductSection
+        header={<Products__Header />}
+        property="product"
+        data={productPage && productPage.product}
+      />
+      <OrderForm
+        header={<OrderForm__Header />}
+      />
       <Footer property="footer"/>
     </Layout>
   );

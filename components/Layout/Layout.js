@@ -5,9 +5,6 @@ const Layout = ({ children }) => (
     <Head>
       <title>Мёд</title>
       <meta charSet="UTF-8"/>
-
-
-
       <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet"/>
     </Head>
     { children }
