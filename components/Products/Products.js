@@ -1,4 +1,3 @@
-import useStoreon from 'storeon/react'
 import Products__Article from './Products__Article';
 
 

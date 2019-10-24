@@ -11,7 +11,7 @@ import OrderForm__Header from '../components/OrderForm/OrderForm__Header';
 
 const Products = () => {
   const productPage = useStoreon('products-page')['products-page'];
-  console.log(productPage);
+
   return (
     <Layout>
       <Header/>
