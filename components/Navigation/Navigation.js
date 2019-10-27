@@ -24,80 +24,44 @@ const Navigation = ({ className }) => {
       <nav className="Navigation">
         <ul className="Navigation__list">
           <Navigation__Item
-            onMouseEnter={hoverHandler}
-            onMouseLeave={unHoverHandler}
             href="/" label="Главная"/>
           <Navigation__Item
-            onMouseEnter={hoverHandler}
-            onMouseLeave={unHoverHandler}
             href="/products" label="Продукция"/>
           <Navigation__Item
-            onMouseEnter={hoverHandler}
-            onMouseLeave={unHoverHandler}
-            href="/about" label="О Нас"/>
+            href="/about" label="Пасека"/>
           <Navigation__Item
-            onMouseEnter={hoverHandler}
-            onMouseLeave={unHoverHandler}
-            href="/contacts" label="Контакты"/>
+            href="/delivery-and-payment"
+            label="Доставка и оплата"/>
+          <Navigation__Item
+            href="/blog"
+            label="Блог"
+          />
+          <Navigation__Item
+            href="/contacts"
+            label="Контакты"
+          />
         </ul>
       </nav>
   
       <style jsx>{`
-          .Navigation {
-            --navigation-height: 50px;
-            background-color: inherit;
-            height: var(--navigation-height, 70px);
-          }
-
-/*
-          .Navigation__wrapper:before {
-            content: '';
-            width: 100%;
-            height: 2px;
-            background-color: inherit;
-
-            border-width: 40px;
-            border-style: solid none none none;
-            border-image: url('/static/images/cell-6.png') 50;
-            border-image-repeat: space;
-            background-clip: padding-box;
-            margin-top: -40px;
-            transition: all 0.5s;
-            transform: translateY(1px);
-          }
-
-          .Navigation__wrapper:after {
-            content: '';
-            width: 100%;
-            background-color: inherit;
-
-            border-width: 40px;
-            border-style: none none solid none;
-            border-image: url('/static/images/cell-6.png') 50;
-            border-image-repeat: space;
-            background-clip: padding-box;
-            margin-bottom: -40px;
-            transition: all 0.5s;
-            transform: translateY(-1px);
-          }
-          */
-
           .Navigation__wrapper {
+            --navigation-height: 80px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #FF9500;
+            background-color: #ff9500c4;
 
             background-clip: content-box;
             width: 100%;
             box-sizing: border-box;
-            height: var(--navigation-height, 70px)
+            height: var(--navigation-height, 70px);
             justify-content: center;
+            border-bottom: 2px solid var(--second-color);
+            
           }
 
-          .Navigation__wrapper_dried:after, .Navigation__wrapper_dried:before  {
-            border-width: 0;
-            margin: 0;
+          .Navigation {
+            height: var(--navigation-height, 70px);
           }
   
           .Navigation__list {

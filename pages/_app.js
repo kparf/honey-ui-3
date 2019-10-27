@@ -8,10 +8,7 @@ class MyApp extends App {
   static async getInitialProps(appContext) {
     const isServer = typeof window === 'undefined';
 
-    let store;
-
-    store = initStore();
-
+    let store = initStore();
 
     appContext.ctx.store = store;
     const appProps = await App.getInitialProps(appContext);

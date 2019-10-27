@@ -12,7 +12,7 @@ const Layout = ({ children }) => (
 
     <style jsx global>{`
       :root {
-        --page-width: 960px;
+        --page-width: 1060px;
 
         --app-main-color: #000;
         --second-color: #fff;
@@ -34,6 +34,12 @@ const Layout = ({ children }) => (
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
+      }
+
+      @media (max-width: 1100px) {
+        :root {
+          --page-width: 100%;
+        }
       }
     `}
     </style>

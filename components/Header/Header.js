@@ -8,7 +8,7 @@ const Header = ({ property="header" }) => {
   const { phone, address, logo } = header;
 
   return (
-    <header className="Header Header_navigation_shift" property={ property }>
+    <header className="Header" property={ property }>
       <div className="Header__container">
         <img
           property="logo"
@@ -31,8 +31,12 @@ const Header = ({ property="header" }) => {
           align-items: center;
 
           font-weight: bold;
-          background-color: var(--accent-color);
+          background-image: radial-gradient(transparent, var(--accent-color)), url('/static/images/header.jpg');
           color: var(--app-main-color);
+        }
+
+        .Header .Header__container {
+          padding-bottom: 40px;
         }
 
         .Header__container {
@@ -45,11 +49,6 @@ const Header = ({ property="header" }) => {
         .Header_navigation_shift {
           padding-bottom: var(--navigatioin-border-waigth, 40px);
           background-clip: content-box;
-        }
-      `}</style>
-      <style jsx global>{`
-        .Navigation_shift {
-          transform: translateY(var(--navigatioin-border-waigth, 40px));
         }
       `}</style>
     </header>
