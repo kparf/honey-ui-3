@@ -6,8 +6,7 @@ const DEFAULT_INNER_PROERTY_SET = {
   header: 'hello-header',
   info: 'hello-info',
 }
-const Hello = ({ property, innerProperties }) => {
-  const data = useStoreon(property)[property];
+const Hello = ({ property, data, innerProperties }) => {
   innerProperties = { ...DEFAULT_INNER_PROERTY_SET, innerProperties };
   const { header, info } = extractProperties(innerProperties, data);
 

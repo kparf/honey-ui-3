@@ -5,12 +5,16 @@ import Header__Information from './Header__Information';
 const Header = ({ property="header" }) => {
 
   const { header } = useStoreon('header');
-  const { phone, address } = header;
+  const { phone, address, logo } = header;
 
   return (
     <header className="Header Header_navigation_shift" property={ property }>
       <div className="Header__container">
-        <img property="logo" src="https://via.placeholder.com/100.png" />
+        <img
+          property="logo"
+          mv-default="https://via.placeholder.com/100.png"
+          src={logo}
+          />
         <Header__Information phone={phone} address={address}/>
       </div>
       <Navigation className="Navigation_shift"/>

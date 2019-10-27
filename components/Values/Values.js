@@ -2,17 +2,15 @@ import useStoreon from 'storeon/react';
 import ValuesArticle from './Values__Article';
 
 
-const Values = ({ property }) => {
-
-  const valueList = useStoreon(property)[property];
+const Values = ({ property, data }) => {
 
   return (
     <div className="Values">
       <section className="Values__section section">
         <div className="Values__content">
           {
-            valueList
-              ? valueList.map( (value, index) => <ValuesArticle key={index} value={ value } /> )
+            data
+              ? data.map( (value, index) => <ValuesArticle key={index} value={ value } /> )
               : false
           }
         </div>
