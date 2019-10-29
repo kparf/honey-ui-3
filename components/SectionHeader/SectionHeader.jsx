@@ -1,16 +1,18 @@
 import classNames from 'classnames';
 
 
-const SectionHeader = ({ children, className }) => (
+const SectionHeader = ({ property, children, className }) => (
   <div className={classNames("SectionHeader", className)}>
     <div className="SectionHeader__wrapper">
-        <h2 className="SectionHeader__text">{ children }</h2>
+        <h2 property={property} className="SectionHeader__text">{ children }</h2>
     </div>
+
     <style jsx global>{`
       .SectionHeader_left .SectionHeader__wrapper.SectionHeader__wrapper::before {
         flex-grow: 0;
       }
     `}</style>
+
     <style jsx>{`
       .SectionHeader {
         --default-secion-header-border-color: #0000009e;

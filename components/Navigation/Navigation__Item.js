@@ -15,7 +15,7 @@ const Navigation__Item = ({ href, label, onMouseEnter, onMouseLeave }) => (
         flex-direction: column;
         --decoration-color: #FFF;
         width: min-content;
-        font-size: 1.5em;
+        font-size: 1.3em;
         height: var(--navigation-height, 70px);
         justify-content: center;
       }

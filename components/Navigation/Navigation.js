@@ -45,7 +45,7 @@ const Navigation = ({ className }) => {
   
       <style jsx>{`
           .Navigation__wrapper {
-            --navigation-height: 80px;
+            --navigation-height: 70px;
             display: flex;
             flex-direction: column;
             align-items: center;
