@@ -109,6 +109,7 @@ const OrderForm = ({ header }) => {
           margin-right: 20px;
           font-weight: bold;
           background: var(--second-color);
+          color: var(--app-main-color);
         }
       `}</style>
     </div>

@@ -37,7 +37,7 @@ const MdComponent = ({ property, data, header, innerProperties = {}  }) => {
 
         .MdComponent__content-container {
           width: var(--page-width);
-          background: #000;
+          background: var(--app-main-color);
           color: #fff;
           padding: 20px;
           box-sizing: border-box;
