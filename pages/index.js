@@ -3,6 +3,7 @@ import { initialisation } from '../store/init';
 import Layout from '../components/Layout/Layout';
 import Header from '../components/Header/Header';
 import Carusel from '../components/Carusel/Carusel';
+import CaruselNew from '../components/Carusel/CaruselNew';
 import Products from '../components/Products/Products';
 import Hello from '../components/Hello/Hello';
 import Values from '../components/Values/Values';
@@ -20,7 +21,7 @@ const Index = () => {
   return (
     <Layout>
       <Header/>
-      <Carusel property="slide"/>
+      <CaruselNew property="slide" />
       <Products property="product" data={product}/>
       <Hello property="hello" data={hello}/>
       <Values property="valuesArticle" data={valuesArticle}/>

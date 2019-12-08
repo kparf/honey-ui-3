@@ -11,11 +11,13 @@
   "author": "Kiryl Parfiankou <kiryl.parfiankou.dev@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "classnames": "^2.2.6",
     "isomorphic-unfetch": "^3.0.0",
     "lodash": "^4.17.15",
     "next": "^9.0.0",
     "react": "^16.8.4",
+    "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.8.4",
     "react-markdown": "^4.2.2",
     "showdown": "^1.9.0",
