@@ -32,7 +32,7 @@ const Products__Article = ({ value, property = "product", innerProperties = {} }
         .Products__Article-image {
           height: 200px;
           width: 200px;
-          border: 2px solid black;
+          border: 2px solid var(--app-main-color);
         }
 
         .Products__Article-price-container {
@@ -54,7 +54,7 @@ const Products__Article = ({ value, property = "product", innerProperties = {} }
         .Products__Article-info-description {
           margin: 0;
           color: white;
-          background-color: black;
+          background-color: var(--app-main-color);
           padding: 10px;
         }
       `}</style>

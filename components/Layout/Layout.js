@@ -10,7 +10,7 @@ const Layout = ({ children }) => (
       :root {
         --page-width: 1060px;
 
-        --app-main-color: #000;
+        --app-main-color: #542d18;
         --second-color: #fff;
         --accent-color: #fbd303f0;
         --decoration-color: #000;
@@ -18,7 +18,9 @@ const Layout = ({ children }) => (
         --second-background: #000;
 
         --carusel-text-width: 960px;
-        --carusel-text-color: #000;
+        --carusel-text-color: var(--app-main-text-color);
+
+        --app-main-text-color: #542d18;
       }
 
       body {
@@ -30,6 +32,7 @@ const Layout = ({ children }) => (
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
+        color: var(--app-main-text-color);
       }
 
       @media (max-width: 1100px) {

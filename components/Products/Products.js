@@ -19,7 +19,7 @@ const Products = ({ property, data, header }) => {
       </section>
       <style jsx>{`
         .Products {
-          --price-color: black;
+          --price-color: var(--app-main-color);
         }
 
         .Products__section {

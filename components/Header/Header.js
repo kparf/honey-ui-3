@@ -32,7 +32,8 @@ const Header = ({ property="header" }) => {
 
           font-weight: bold;
           background-image: radial-gradient(transparent, var(--accent-color)), url('/static/images/header.jpg');
-          color: var(--app-main-color);
+          color: var(--app-main-text-color);
+          font-weight: bold;
         }
 
         .Header .Header__container {

@@ -19,7 +19,7 @@ class MyDocument extends Document {
         <Head>
           <title>Мёд</title>
           <meta charSet="UTF-8"/>
-          <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap&subset=cyrillic" rel="stylesheet"></link>
           {
             isAdminMode() && (
               <>
