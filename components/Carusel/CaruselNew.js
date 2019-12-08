@@ -14,8 +14,6 @@ const Carusel = ({ property }) => {
     setDirection(e.direction);
   };
 
-  console.log(slideList);
-
   return (
     <>
       <Carousel className="Carusel" activeIndex={index} direction={direction} onSelect={handleSelect}>

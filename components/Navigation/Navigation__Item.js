@@ -24,11 +24,11 @@ const Navigation__Item = ({ href, label }) => (
         display: flex;
         align-items: center;
         padding: 0 20px;
-        transition: background-color 0.3s;
+        transition: color 0.3s;
       }
 
       .Navigation__Item a:hover, .Navigation__Item a:focus  {
-        background-color: var(--accent-color);
+        color: var(--main-text-color);
       }
 
       .Navigation__Item a {

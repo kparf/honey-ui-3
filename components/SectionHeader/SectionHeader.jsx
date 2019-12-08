@@ -19,6 +19,7 @@ const SectionHeader = ({ property, children, className }) => (
         display: flex;
         width: 100%;
         align-items: center;
+        margin: 1em 0;
       }
 
       .SectionHeader__text img {

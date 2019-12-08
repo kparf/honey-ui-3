@@ -56,7 +56,7 @@ const Navigation = ({ className }) => {
             box-sizing: border-box;
             height: var(--navigation-height, 70px);
             justify-content: center;
-            border-bottom: 2px solid var(--second-color);
+            border-bottom: 4px solid var(--second-color);
             
           }
 
