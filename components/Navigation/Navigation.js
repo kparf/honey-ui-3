@@ -54,19 +54,20 @@ const Navigation = ({ className }) => {
             background-clip: content-box;
             width: 100%;
             box-sizing: border-box;
-            height: var(--navigation-height, 70px);
+            min-height: var(--navigation-height, 70px);
             justify-content: center;
             border-bottom: 4px solid var(--second-color);
             
           }
 
           .Navigation {
-            height: var(--navigation-height, 70px);
+            min-height: var(--navigation-height, 70px);
           }
   
           .Navigation__list {
             display: flex;
-            height: var(--navigation-height, 70px);
+            flex-wrap: wrap;
+            min-height: var(--navigation-height, 70px);
             width: var(--page-width);
             list-style: none;
             justify-content: center;

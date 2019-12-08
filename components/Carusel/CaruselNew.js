@@ -16,7 +16,7 @@ const Carusel = ({ property }) => {
 
   return (
     <>
-      <Carousel className="Carusel" activeIndex={index} direction={direction} onSelect={handleSelect}>
+      <Carousel fade={true} className="Carusel" activeIndex={index} direction={direction} onSelect={handleSelect}>
         {
           slideList ? slideList.map( (slide, i) => <Carusel__Slide active={i === index} key={ i } property={ property } value={ slide }/>) : false
         }
@@ -40,6 +40,20 @@ const Carusel = ({ property }) => {
         .carousel-item {
           height: 500px;
         }
+
+        @keyframes fade {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        .carousel-item.active {
+          animation: 1s fade;
+        }
+
         body[mv-mode="edit"] .Carusel__list {
           transform: none;
           transition: none;
