@@ -1,8 +1,11 @@
-import Head from 'next/head'
+import ApplicationMode from '../../contexts/ApplicationMode';
+import getConfig from 'next/config';
+
+const { publicRuntimeConfig } = getConfig()
 
 
 const Layout = ({ children }) => (
-  <div>
+  <ApplicationMode.Provider value={ publicRuntimeConfig.APP_MODE }>
 
     { children }
 
@@ -42,7 +45,7 @@ const Layout = ({ children }) => (
       }
     `}
     </style>
-  </div>
+  </ApplicationMode.Provider>
 )
 
 export default Layout

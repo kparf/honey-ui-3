@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
 
-const Navigation__Item = ({ href, label, onMouseEnter, onMouseLeave }) => (
+const Navigation__Item = ({ href, label }) => (
   <li className="Navigation__Item">
     <Link href={href}>
-      <a onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>{label}</a>
+      <a>{label}</a>
     </Link>
 
 
