@@ -57,8 +57,8 @@ const Footer = ({ property = "footer", innerProperties= {} }) => {
           width: var(--page-width);
           font-size: 1.5em;
           text-align: center;
-          color: var(--second-color);
-          background-color: var(--app-main-color);
+          color: var(--app-main-text-color);
+          font-weight: bold; 
           padding: 10px;
           box-sizing: border-box;
         }

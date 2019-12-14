@@ -5,7 +5,7 @@ const DEFAULT_INNER_PROERTY_SET = {
   description: 'description',
 }
 
-const Products__Article = ({ value, property = "product", innerProperties = {} }) => {
+const Products__Article = ({ value, property = "product", innerProperties = {}}) => {
   innerProperties = { ...DEFAULT_INNER_PROERTY_SET, ...innerProperties };
 
   return (
@@ -14,13 +14,26 @@ const Products__Article = ({ value, property = "product", innerProperties = {} }
       <img property={ innerProperties.image }
           className="Products__Article-image"
           mv-default="https://via.placeholder.com/200.png"
-          src={ value[innerProperties.image] }/>
-      <div className="Products__Article-price-container">
-        <span property={ innerProperties.price } className="Products__Article-price" mv-defautl="Цена">{ value[innerProperties.price] }</span>
-      </div>
+          src={ value[innerProperties.image] }
+      />
+      {
+        value[innerProperties.price] && (
+          <div className="Products__Article-price-container">
+            <span property={ innerProperties.price } className="Products__Article-price" mv-defautl="Цена">{ value[innerProperties.price] }</span>
+          </div>
+        )
+      }
       <div className="Products__Article-info">
-        <h6 property={ innerProperties.name } className="Products__Article-info-header" mv-default="Название">{ value[innerProperties.name] }</h6>
-        <p property={ innerProperties.description } className="Products__Article-info-description" mv-default="Описание">{ value[innerProperties.description] }</p>
+        {
+          value[innerProperties.name] && (
+            <h6 property={ innerProperties.name } className="Products__Article-info-header" mv-default="Название">{ value[innerProperties.name] }</h6>
+          )
+        }
+        {
+          value[innerProperties.description] && (
+            <p property={ innerProperties.description } className="Products__Article-info-description" mv-default="Описание">{ value[innerProperties.description] }</p>
+          )
+        }
       </div>
 
       <style jsx>{`

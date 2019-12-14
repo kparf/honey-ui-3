@@ -38,8 +38,9 @@ const CaruselNew__Slide = ({ active, value, property = "slide", imageProperty = 
         padding: 10px;
         color: var(--carusel-text-color, black);
         width: fit-content;
-        background-color: var(--accent-color); 
+        background-color: var(--carusel-text-bg); 
         font-size: var(--carusel-font-size, 3em);
+        text-shadow: #fff 2px 2px 10px; 
         font-weight: bold;
       }
 

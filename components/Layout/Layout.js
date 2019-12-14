@@ -22,6 +22,7 @@ const Layout = ({ children }) => (
 
         --carusel-text-width: 960px;
         --carusel-text-color: var(--app-main-text-color);
+        --carusel-text-bg: transparent;
 
         --app-main-text-color: #542d18;
         --form-background: var(--app-main-color);
