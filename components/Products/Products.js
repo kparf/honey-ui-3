@@ -1,4 +1,5 @@
 import Products__Article from './Products__Article';
+import Link from 'next/link';
 
 
 const Products = ({ property, data, header }) => {
@@ -11,7 +12,12 @@ const Products = ({ property, data, header }) => {
           {
             data ? data.map( (product, index) => {
               return (
-                <Products__Article key={ index } value={ product }/>
+                <Products__Article
+                  className={'Products__Article_withMargin'}
+                  key={ index }
+                  value={ product }
+                  href="/products"
+                />
               )
             }) : false
           }
@@ -29,7 +35,7 @@ const Products = ({ property, data, header }) => {
         }
 
         .Products__content {
-          width: var(--page-width);
+          /* width: var(--page-width); */
           display: flex;
           padding: 50px 0;
           flex-wrap: wrap;

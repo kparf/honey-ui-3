@@ -1,3 +1,7 @@
+import { useCallback, useEffect } from 'react';
+import Link from 'next/link';
+import classNames from 'classnames';
+
 const DEFAULT_INNER_PROERTY_SET = {
   image: 'product-image',
   price: 'price',
@@ -5,17 +9,21 @@ const DEFAULT_INNER_PROERTY_SET = {
   description: 'description',
 }
 
-const Products__Article = ({ value, property = "product", innerProperties = {}}) => {
+const Products__Article = ({ className, value, property = "product", innerProperties = {}, href}) => {
   innerProperties = { ...DEFAULT_INNER_PROERTY_SET, ...innerProperties };
 
   return (
     <article property={ property }
-             className="Products__Article" mv-multiple="true">
-      <img property={ innerProperties.image }
-          className="Products__Article-image"
-          mv-default="https://via.placeholder.com/200.png"
-          src={ value[innerProperties.image] }
-      />
+             className={classNames('Products__Article', className)} mv-multiple="true">
+      <Link href={href}>
+        <img property={ innerProperties.image }
+            className={classNames('Products__Article-image', {
+              Products__Article_clickable: !!href,
+            })}
+            mv-default="https://via.placeholder.com/200.png"
+            src={ value[innerProperties.image] }
+        />
+      </Link>
       {
         value[innerProperties.price] && (
           <div className="Products__Article-price-container">
@@ -35,8 +43,22 @@ const Products__Article = ({ value, property = "product", innerProperties = {}})
           )
         }
       </div>
+      <style jsx global>{`
+        .Products__Article_clickable {
+          transition: all 0.3s;
+        }
 
+        .Products__Article_clickable:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
+
+        .Products__Article_withMargin.Products__Article_withMargin.Products__Article_withMargin {
+          margin: 10px;
+        }
+      `}</style>
       <style jsx>{`
+
         .Products__Article {
           margin: 20px 0;
           max-width: 204px;
@@ -58,9 +80,10 @@ const Products__Article = ({ value, property = "product", innerProperties = {}})
 
         .Products__Article-info-header {
           font-size: 20px;
+          font-weight: bold;
           margin: 0;
           padding: 10px;
-          background-color: #fbd303f0;
+          /*background-color: #fbd303f0;*/
           width: fit-content;
         }
 

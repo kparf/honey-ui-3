@@ -46,9 +46,9 @@ const Values__Article = ({ value, property = 'valuesArticle', innerProperties = 
         .Values__Article-description {
           font-size: 20px;
           padding: 10px;
-          background-color: var(--app-main-color);
-          color: var(--second-color);
+          color: var(--app-main-text-color);
           width: fit-content;
+          font-weight: bold;
         }
       `}</style>
     </article>
