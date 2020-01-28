@@ -2,9 +2,9 @@ import useStoreon from 'storeon/react';
 import { initialisation } from '../store/init';
 import Layout from '../components/Layout/Layout';
 import Header from '../components/Header/Header';
-import Carusel from '../components/Carusel/Carusel';
 import CaruselNew from '../components/Carusel/CaruselNew';
 import Products from '../components/Products/Products';
+import MainProducts from '../components/MainProducts/MainProducts';
 import Hello from '../components/Hello/Hello';
 import Values from '../components/Values/Values';
 import Footer from '../components/Footer/Footer';
@@ -16,13 +16,15 @@ const Index = () => {
     product,
     hello,
     valuesArticle,
-  } = useStoreon('product', 'hello', 'valuesArticle');
+    MainProduct,
+  } = useStoreon('product', 'hello', 'valuesArticle', 'MainProduct');
 
   return (
     <Layout>
       <Header/>
       <CaruselNew property="slide" />
       <Products property="product" data={product}/>
+      <MainProducts property="MainProduct" data={MainProduct}/>
       <Hello property="hello" data={hello}/>
       <Values property="valuesArticle" data={valuesArticle}/>
       <Footer property="footer"/>
