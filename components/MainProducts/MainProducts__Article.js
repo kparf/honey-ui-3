@@ -58,9 +58,14 @@ const MainProducts__Article = ({ className, value, property = "MainProduct", inn
         }
 
         .Products__Article-image {
-          height: 300px;
-          width: 300px;
+          height: 400px;
+          width: 400px;
           border: 2px solid var(--app-main-color);
+        }
+
+        .Products__Article-info {
+          display: flex;
+          justify-content: center;
         }
 
         .Products__Article-price-container {
@@ -76,7 +81,6 @@ const MainProducts__Article = ({ className, value, property = "MainProduct", inn
           font-weight: bold;
           margin: 0;
           padding: 10px;
-          /*background-color: #fbd303f0;*/
           width: fit-content;
         }
 

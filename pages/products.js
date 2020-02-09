@@ -2,27 +2,25 @@ import useStoreon from 'storeon/react';
 import { initialisation } from '../store/init';
 import Layout from '../components/Layout/Layout';
 import Header from '../components/Header/Header';
-import ProductSection from '../components/Products/Products';
 import Footer from '../components/Footer/Footer';
-import Products__Header from '../components/Products/Products__Header';
-import OrderForm from '../components/OrderForm/OrderForm';
-import OrderForm__Header from '../components/OrderForm/OrderForm__Header';
+import MdContent from '../components/MdComponent/MdComponent';
+import Main from '../components/Main/Main';
+import SectionHeader from '../components/SectionHeader/SectionHeader';
 
 
 const Products = () => {
   const productPage = useStoreon('products-page')['products-page'];
-
+  const header = <SectionHeader className="SectionHeader_left">Продукция</SectionHeader>
   return (
     <Layout>
       <Header/>
-      <ProductSection
-        header={<Products__Header />}
-        property="product"
-        data={productPage && productPage.product}
-      />
-      <OrderForm
-        header={<OrderForm__Header />}
-      />
+      <Main property="delivery-and-payment-page">
+        <MdContent
+          header={header}
+          property="content"
+          data={productPage.content}
+        />
+      </Main>
       <Footer property="footer"/>
     </Layout>
   );
