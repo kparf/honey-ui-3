@@ -48,7 +48,7 @@ const MainProducts__Article = ({ className, value, property = "MainProduct", inn
         }
 
         .Products__Article_withMargin.Products__Article_withMargin.Products__Article_withMargin {
-          margin: 10px;
+          margin: 20px;
         }
       `}</style>
       <style jsx>{`

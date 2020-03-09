@@ -5,3 +5,7 @@ export function extractProperties( properties, data = {} ) {
   }
   return result;
 }
+
+export function isAdminMode() {
+  return 'admin' === publicRuntimeConfig.APP_MODE;
+}
