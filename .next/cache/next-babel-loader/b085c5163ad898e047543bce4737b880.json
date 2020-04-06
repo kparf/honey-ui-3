@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { getInitData } from '../api';\nexport const initialisation = store => {\n  return new Promise((resolve, reject) => {\n    const unsub = store.on('init/fetch-res', state => {\n      unsub();\n      resolve(state);\n    });\n    store.dispatch('init/fetch');\n  });\n};","map":null,"metadata":{},"sourceType":"module"}
