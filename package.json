@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export"
   },
   "repository": "https://github.com/kparf/honey-ui-3.git",
   "author": "Kiryl Parfiankou <kiryl.parfiankou.dev@gmail.com>",
