@@ -43,21 +43,29 @@
       "static/GgqyPk4d_NlaArZs0Eqqy/pages/contacts.js": 15,
       "static/GgqyPk4d_NlaArZs0Eqqy/pages/delivery-and-payment.js": 16,
       "static/GgqyPk4d_NlaArZs0Eqqy/pages/index.js": 17,
-      "static/GgqyPk4d_NlaArZs0Eqqy/pages/products.js": 18
+      "static/GgqyPk4d_NlaArZs0Eqqy/pages/products.js": 18,
+      "static/XC7HJ4Uc_bxwPC_FQoiGW/pages/_app.js": 2,
+      "static/XC7HJ4Uc_bxwPC_FQoiGW/pages/_error.js": 3,
+      "static/XC7HJ4Uc_bxwPC_FQoiGW/pages/about.js": 4,
+      "static/XC7HJ4Uc_bxwPC_FQoiGW/pages/blog.js": 5,
+      "static/XC7HJ4Uc_bxwPC_FQoiGW/pages/contacts.js": 6,
+      "static/XC7HJ4Uc_bxwPC_FQoiGW/pages/delivery-and-payment.js": 7,
+      "static/XC7HJ4Uc_bxwPC_FQoiGW/pages/index.js": 8,
+      "static/XC7HJ4Uc_bxwPC_FQoiGW/pages/products.js": 9
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
       10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
     ]
   }
 }
