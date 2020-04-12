@@ -66,6 +66,7 @@ const MainProducts__Article = ({ className, value, property = "MainProduct", inn
         .Products__Article-info {
           display: flex;
           justify-content: center;
+          margin-top: 15px;
         }
 
         .Products__Article-price-container {

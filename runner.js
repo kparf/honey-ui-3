@@ -1,3 +1,5 @@
-const { exec } = require('child_process');
+const http = require('http');
+const httpProxy = require('http-proxy');
 
-exec('npm run start');
+
+httpProxy.createProxyServer({target:'http://localhost:3000'}).listen();
