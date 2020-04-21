@@ -14,7 +14,7 @@ const Products = () => {
   return (
     <Layout>
       <Header/>
-      <Main property="delivery-and-payment-page">
+      <Main property="products-page">
         <MdContent
           header={header}
           property="content"

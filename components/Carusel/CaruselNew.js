@@ -65,6 +65,23 @@ const Carusel = ({ property }) => {
         body[mv-mode="edit"] .Carusel {
           height: unset;
         }
+
+        body[mv-mode="edit"] .Carusel .carousel-inner {
+          display: flex;
+          overflow: auto;
+          flex-direction: column;
+        }
+
+        body[mv-mode="edit"] .Carusel .carousel-control-prev,
+        body[mv-mode="edit"] .Carusel .carousel-control-next,
+        body[mv-mode="edit"] .Carusel .carousel-indicators {
+          display: none;
+        }
+
+        body[mv-mode="edit"] .Carusel .carousel-item {
+          display: block;
+          opacity: 1;
+        }
       `}</style>
     </>
   );

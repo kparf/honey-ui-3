@@ -1,23 +1,27 @@
 import useStoreon from 'storeon/react';
 import Layout from '../components/Layout/Layout';
 import Header from '../components/Header/Header';
+import Main from '../components/Main/Main';
 import { initialisation } from '../store/init';
 import Footer from '../components/Footer/Footer';
 import Description from '../components/Description/Description';
-import Description__Header from '../components/Description/Description__Header';
+import SectionHeader from '../components/SectionHeader/SectionHeader';
 
 
 const About = () => {
   const aboutPage = useStoreon('about-page')['about-page'];
+  const header = <SectionHeader className="SectionHeader_left">Пасека</SectionHeader>
 
   return (
     <Layout>
       <Header/>
-      <Description
-        header={<Description__Header />}
-        property="description"
-        data={aboutPage && aboutPage}
-      />
+      <Main property="about-page">
+        <Description
+          header={header}
+          property="description"
+          data={aboutPage}
+        />
+      </Main>
       <Footer/>
     </Layout>
   )

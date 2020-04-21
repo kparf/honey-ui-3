@@ -60,7 +60,9 @@ const CaruselNew__Slide = ({ active, value, property = "slide", imageProperty = 
         align-items: center;
       }
 
-      .Carusel__slide[mv-mode="edit"] .Carusel__slide-text-container {
+    `}</style>
+    <style jsx global>{`
+      body[mv-mode="edit"] .Carusel__slide-text-container {
         width: unset;
         height: unset;
         display: block;

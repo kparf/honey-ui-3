@@ -8,6 +8,7 @@ const DEFAULT_INNER_PROERTY_SET = {
 };
 const DEFAULT_INFO_INNER_PROERTY_SET = {
   text: 'text',
+  unp: 'unp',
 };
 
 const Footer = ({ property = "footer", innerProperties= {} }) => {
@@ -16,7 +17,7 @@ const Footer = ({ property = "footer", innerProperties= {} }) => {
   innerProperties = { ...DEFAULT_INNER_PROERTY_SET, ...innerProperties };
   const { social, info } = extractProperties(innerProperties, data);
 
-  const { text } = extractProperties(DEFAULT_INFO_INNER_PROERTY_SET, info.value);
+  const { text, unp } = extractProperties(DEFAULT_INFO_INNER_PROERTY_SET, info.value);
 
 
   return (
@@ -32,6 +33,7 @@ const Footer = ({ property = "footer", innerProperties= {} }) => {
       <div className="Footer-devider"></div>
 
       <div property={ info.key } className="Info-container">
+        <span property={ unp.key } className="Footer__text" mv-default="УНП">{ unp.value }</span>
         <span property={ text.key } className="Footer__text" mv-default="Текст">{ text.value }</span>
       </div>
 
@@ -54,6 +56,7 @@ const Footer = ({ property = "footer", innerProperties= {} }) => {
 
         .Info-container {
           display: flex;
+          flex-direction: column;
           width: var(--page-width);
           font-size: 1.5em;
           text-align: center;
