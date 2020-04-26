@@ -6,6 +6,8 @@ const DEFAULT_INNER_PROERTY_SET = {
   image: 'product-image',
   price: 'price',
   name: 'name',
+  slug: 'slug',
+  text: 'text',
 }
 
 const MainProducts__Article = ({ className, value, property = "MainProduct", innerProperties = {}, href}) => {
@@ -32,9 +34,13 @@ const MainProducts__Article = ({ className, value, property = "MainProduct", inn
       }
       <div className="Products__Article-info">
         {
-          value[innerProperties.name] && (
-            <h6 property={ innerProperties.name } className="Products__Article-info-header" mv-default="Название">{ value[innerProperties.name] }</h6>
-          )
+          [
+            value[innerProperties.name] && (
+              <h6 property={ innerProperties.name } className="Products__Article-info-header" mv-default="Название">{ value[innerProperties.name] }</h6>
+            ),
+            <span property={ innerProperties.slug } className="Products__Article-info-slug" mv-default="slug">{ value[innerProperties.slug] }</span>,
+            <span property={ innerProperties.text } className="Products__Article-info-text markdown" mv-default="Text">{ value[innerProperties.text] }</span>
+          ]
         }
       </div>
       <style jsx global>{`
@@ -85,11 +91,50 @@ const MainProducts__Article = ({ className, value, property = "MainProduct", inn
           width: fit-content;
         }
 
+        .Products__Article-info-slug {
+          display: none;
+          font-size: 16px;
+          margin: 0;
+          padding: 10px;
+          width: fit-content;
+        }
+
+        .Products__Article-info-text {
+          display: none;
+          font-size: 16px;
+          margin: 0;
+          padding: 10px;
+          width: fit-content;
+        }
+
         .Products__Article-info-description {
           margin: 0;
           color: white;
           background-color: var(--app-main-color);
           padding: 10px;
+        }
+      `}</style>
+
+      <style jsx global>{`
+        body[mv-mode="edit"] .Products__Article-info-slug {
+          display: block;
+          width: 100%;
+        }
+
+        body[mv-mode="edit"] .Products__Article-info-text {
+          display: block;
+          width: 100%;
+        }
+
+        body[mv-mode="edit"] .Products__Article-info {
+          display: flex;
+          flex-direction: column;
+        }
+
+        body[mv-mode="edit"] .Products__Article {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
         }
       `}</style>
     </article>

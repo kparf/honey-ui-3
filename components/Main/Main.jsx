@@ -1,4 +1,4 @@
-const Main = ({ property="main", children }) => {
+const Main = ({ property, children }) => {
   return (
     <main property={property}>
       { children }

@@ -16,7 +16,7 @@ const MainProducts = ({ property, data, header }) => {
                   className={'Products__Article_withMargin '}
                   key={ index }
                   value={ product }
-                  href="/products"
+                  href={`/product/${product.slug}`}
                 />
               )
             }) : false

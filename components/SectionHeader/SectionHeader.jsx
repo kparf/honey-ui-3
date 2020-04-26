@@ -1,10 +1,25 @@
 import classNames from 'classnames';
 
 
-const SectionHeader = ({ property, children, className }) => (
+const SectionHeader = ({
+  property,
+  children,
+  className,
+  imgSrc,
+}) => (
   <div className={classNames("SectionHeader", className)}>
     <div className="SectionHeader__wrapper">
+      <div className="SectionHeader__container">
         <h2 property={property} className="SectionHeader__text">{ children }</h2>
+        {
+          imgSrc && (
+            <img
+              className="SectionHeader__img"
+              src={imgSrc}
+            />
+          )
+        }
+      </div>
     </div>
 
     <style jsx global>{`
@@ -22,6 +37,15 @@ const SectionHeader = ({ property, children, className }) => (
         margin: 1em 0;
       }
 
+      .SectionHeader__container {
+        background: #fbd30391;
+        border: 4px solid var(--default-secion-header-border-color);
+      }
+
+      .SectionHeader__img {
+        margin: 10px;
+      }
+
       .SectionHeader__text img {
         height: 50px;
         margin-left: 10px;
@@ -32,8 +56,6 @@ const SectionHeader = ({ property, children, className }) => (
         padding: 10px;
         font-size: 2em;
         align-items: center;
-        background: #fbd30391;
-        border: 4px solid var(--default-secion-header-border-color);
       }
 
       .SectionHeader__wrapper {
