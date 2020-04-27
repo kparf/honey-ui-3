@@ -32,12 +32,24 @@ const Layout = ({ children }) => (
         margin: 0;
         min-height: 100vh;
         font-family: 'Exo 2', sans-serif;
-        background-image: radial-gradient(transparent, var(--base-background)), url('/static/images/beautiful-bee-bloom-1591478.jpg');
+        background-image: radial-gradient(transparent, var(--base-background)), url('/static/images/beautiful-bee-bloom-2000px-90q.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
         color: var(--app-main-text-color);
+      }
+
+      @media (max-width: 1100px) {
+        body {
+          background-image: radial-gradient(transparent, var(--base-background)), url('/static/images/beautiful-bee-bloom-1100px-90q.jpg');
+        }
+      }
+
+      @media (max-width: 500px) {
+        body {
+          background-image: radial-gradient(transparent, var(--base-background)), url('/static/images/beautiful-bee-bloom-500px-90q.jpg');
+        }
       }
 
       @media (max-width: 1100px) {

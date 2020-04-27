@@ -17,6 +17,7 @@ const Header__Information = ({ phone, address }) => (
       .Header__Information {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
       }
 
       .Header__InformationIcon {

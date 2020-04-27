@@ -32,8 +32,21 @@ const Header = ({ property="header" }) => {
 
           font-weight: bold;
           background-image: radial-gradient(transparent, var(--accent-color)), url('/static/images/header.jpg');
+          background-size: cover;
           color: var(--app-main-text-color);
           font-weight: bold;
+        }
+
+        @media(max-width: 1100px) {
+          .Header {
+            background-image: radial-gradient(transparent, var(--accent-color)), url('/static/images/header-1100px-90q.jpg');
+          }
+        }
+
+        @media(max-width: 500px) {
+          .Header {
+            background-image: radial-gradient(transparent, var(--accent-color)), url('/static/images/header-500px-90q.jpg');
+          }
         }
 
         .Header .Header__container {
@@ -42,6 +55,7 @@ const Header = ({ property="header" }) => {
 
         .Header__container {
           display: flex;
+          padding: 1em;
           width: var(--page-width);
           align-items: center;
           justify-content: space-between;
