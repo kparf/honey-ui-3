@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -3264,23 +3264,22 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 const Index = () => {
   const {
-    product,
     hello,
     valuesArticle,
     MainProduct
-  } = storeon_react__WEBPACK_IMPORTED_MODULE_1___default()('product', 'hello', 'valuesArticle', 'MainProduct');
+  } = storeon_react__WEBPACK_IMPORTED_MODULE_1___default()('hello', 'valuesArticle', 'MainProduct');
   return __jsx(_components_Layout_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 21,
       columnNumber: 5
     }
   }, __jsx(_components_Header_Header__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 22,
       columnNumber: 7
     }
   }), __jsx(_components_Carusel_CaruselNew__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -3288,7 +3287,7 @@ const Index = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 23,
       columnNumber: 7
     }
   }), __jsx(_components_MainProducts_MainProducts__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -3297,7 +3296,7 @@ const Index = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 24,
       columnNumber: 7
     }
   }), __jsx(_components_Hello_Hello__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -3306,7 +3305,7 @@ const Index = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 25,
       columnNumber: 7
     }
   }), __jsx(_components_Values_Values__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -3315,7 +3314,7 @@ const Index = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 26,
       columnNumber: 7
     }
   }), __jsx(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -3323,7 +3322,7 @@ const Index = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 27,
       columnNumber: 7
     }
   }));
@@ -3393,7 +3392,7 @@ function isAdminMode() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

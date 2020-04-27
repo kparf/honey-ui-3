@@ -3,23 +3,19 @@ import { initialisation } from '../store/init';
 import Layout from '../components/Layout/Layout';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
-import MdContent from '../components/MdComponent/MdComponent';
 import Main from '../components/Main/Main';
 import SectionHeader from '../components/SectionHeader/SectionHeader';
+import MainProducts from '../components/MainProducts/MainProducts';
 
 
 const Products = () => {
-  const productPage = useStoreon('products-page')['products-page'];
-  const header = <SectionHeader className="SectionHeader_left">Продукция</SectionHeader>
+  const { MainProduct } = useStoreon('MainProduct');
   return (
     <Layout>
       <Header/>
-      <Main property="products-page">
-        <MdContent
-          header={header}
-          property="content"
-          data={productPage.content}
-        />
+      <Main>
+        <SectionHeader className="SectionHeader_left">Продукция</SectionHeader>
+        <MainProducts property="MainProduct" data={MainProduct}/>
       </Main>
       <Footer property="footer"/>
     </Layout>

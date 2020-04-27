@@ -12,11 +12,10 @@ import Footer from '../components/Footer/Footer';
 const Index = () => {
 
   const {
-    product,
     hello,
     valuesArticle,
     MainProduct,
-  } = useStoreon('product', 'hello', 'valuesArticle', 'MainProduct');
+  } = useStoreon('hello', 'valuesArticle', 'MainProduct');
 
   return (
     <Layout>

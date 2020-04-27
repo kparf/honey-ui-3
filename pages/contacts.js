@@ -44,6 +44,7 @@ const Contacts = () => {
 
         .mapWrapper .map {
           border: 4px solid var(--accent-color);
+          background: white;
         }
       `}</style>
     </>

@@ -14,7 +14,6 @@ const Products = () => {
   const { slug } = router.query;
   const products = useStoreon('MainProduct')['MainProduct'];
   const currentProduct = products.filter(product => product.slug === slug)[0]
-  console.log(currentProduct);
   return (
     <Layout>
       <Header/>

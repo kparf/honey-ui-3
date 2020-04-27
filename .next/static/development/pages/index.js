@@ -8944,8 +8944,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 var Index = function Index() {
-  var _useStoreon = storeon_react__WEBPACK_IMPORTED_MODULE_2___default()('product', 'hello', 'valuesArticle', 'MainProduct'),
-      product = _useStoreon.product,
+  var _useStoreon = storeon_react__WEBPACK_IMPORTED_MODULE_2___default()('hello', 'valuesArticle', 'MainProduct'),
       hello = _useStoreon.hello,
       valuesArticle = _useStoreon.valuesArticle,
       MainProduct = _useStoreon.MainProduct;
@@ -8954,14 +8953,14 @@ var Index = function Index() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 21,
       columnNumber: 5
     }
   }, __jsx(_components_Header_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 22,
       columnNumber: 7
     }
   }), __jsx(_components_Carusel_CaruselNew__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -8969,7 +8968,7 @@ var Index = function Index() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 23,
       columnNumber: 7
     }
   }), __jsx(_components_MainProducts_MainProducts__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -8978,7 +8977,7 @@ var Index = function Index() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 24,
       columnNumber: 7
     }
   }), __jsx(_components_Hello_Hello__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -8987,7 +8986,7 @@ var Index = function Index() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 25,
       columnNumber: 7
     }
   }), __jsx(_components_Values_Values__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -8996,7 +8995,7 @@ var Index = function Index() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 26,
       columnNumber: 7
     }
   }), __jsx(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -9004,7 +9003,7 @@ var Index = function Index() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 27,
       columnNumber: 7
     }
   }));
@@ -9091,7 +9090,7 @@ function isAdminMode() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!*****************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fws-047-31b%2FWotk%2Fhoney-ui-3%2Fpages%2Findex.js ***!
   \*****************************************************************************************************************************/
@@ -9114,5 +9113,5 @@ module.exports = dll_af4ae872cc9a2dfbe2eb;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

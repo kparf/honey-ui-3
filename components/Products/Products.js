@@ -35,7 +35,6 @@ const Products = ({ property, data, header }) => {
         }
 
         .Products__content {
-          /* width: var(--page-width); */
           display: flex;
           padding: 50px 0;
           flex-wrap: wrap;
