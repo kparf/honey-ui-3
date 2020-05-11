@@ -13,7 +13,7 @@ const Layout = ({ children }) => (
       :root {
         --page-width: 1060px;
 
-        --app-main-color: #542d18;
+        --app-main-color: #774022;
         --second-color: #fff;
         --accent-color: #fbd303f0;
         --decoration-color: #000;
