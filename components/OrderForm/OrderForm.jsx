@@ -4,9 +4,6 @@ const OrderForm = ({ header }) => {
   const formRef = useRef();
   const onSubmitHandler = (e) => {
     e.preventDefault();
-    if (formRef.current) {
-      formRef.current.reset();
-    }
     const formData = new FormData(formRef.current);
     const data = {
       name: formData.get('name'),
@@ -22,7 +19,9 @@ const OrderForm = ({ header }) => {
       },
       body: JSON.stringify(data),
     });
+    formRef.current.reset();
   }
+  
 
   return (
     <div className="form">
