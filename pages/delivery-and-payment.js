@@ -6,6 +6,7 @@ import Footer from '../components/Footer/Footer';
 import MdContent from '../components/MdComponent/MdComponent';
 import Main from '../components/Main/Main';
 import SectionHeader from '../components/SectionHeader/SectionHeader';
+import OrderForm from '../components/OrderForm/OrderForm';
 
 
 const DeliveryAndPayment = () => {
@@ -21,6 +22,7 @@ const DeliveryAndPayment = () => {
           data={deliveryAndPaymentPage.content}
         />
       </Main>
+      <OrderForm />
       <Footer property="footer"/>
     </Layout>
   );

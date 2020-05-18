@@ -1,10 +1,40 @@
+import { useRef } from 'react';
+
 const OrderForm = ({ header }) => {
+  const formRef = useRef();
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+    if (formRef.current) {
+      formRef.current.reset();
+    }
+    const formData = new FormData(formRef.current);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      message: formData.get('message'),
+    }
+    
+    fetch('/api/email', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+  }
+
   return (
     <div className="form">
       <section className="form__section">
         { header }
         <div className="section__content form__content-wrapper">
-          <form className="form__content">
+          <form
+            method="POST"
+            ref={formRef}
+            onSubmit={onSubmitHandler}
+            className="form__content"
+          >
             <label className="form__name">
               <span className="form__label">Имя</span>
               <input type="text" name="name"/>
@@ -13,22 +43,25 @@ const OrderForm = ({ header }) => {
               <span className="form__label">Email</span>
               <input type="email" name="email"/>
             </label>
-            <label>
+            <label className="form__phone">
               <span className="form__label">Телефон</span>
-              <input className="form__phone" type="text" name="phone"/>
+              <input type="text" name="phone"/>
             </label>
             <label className="form__message">
               <span className="form__label">Сообщение</span>
-              <textarea rows="5"></textarea>
+              <textarea name="message" rows="5"></textarea>
             </label>
             <div className="form__button-container">
-              <button>Отправить</button>
-              <button>Очистить</button>
+              <button type="submit">Отправить</button>
             </div>
           </form>
         </div>
       </section>
       <style jsx>{`
+        .form {
+          margin-top: 60px;
+        }
+
         .form__header .section__header-wrapper::before {
           flex-grow: 0;
         }
@@ -51,6 +84,18 @@ const OrderForm = ({ header }) => {
             "buttons buttons buttons";
           width: var(--page-width);
           grid-gap: 10px;
+        }
+
+        @media(max-width: 1000px) {
+          .form__content {
+            padding: 20px;
+            grid-template-areas: 
+              "name    name    name"
+              "email   email   email" 
+              "phone   phone   phone" 
+              "message message message"
+              "buttons buttons buttons";
+          }
         }
 
         .form__section {

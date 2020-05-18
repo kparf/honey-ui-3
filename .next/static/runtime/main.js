@@ -505,7 +505,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/ws-047-31b/Wotk/honey-ui-3/.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "/mnt/w/work/honey-ui-3/.next");
       return error;
     }
   };
@@ -5819,12 +5819,12 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_af4ae872cc9a2dfbe2eb ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_2d548d91c0ce075c3af9 ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_af4ae872cc9a2dfbe2eb */ "dll-reference dll_af4ae872cc9a2dfbe2eb"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_2d548d91c0ce075c3af9 */ "dll-reference dll_2d548d91c0ce075c3af9"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -6086,12 +6086,12 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_af4ae872cc9a2dfbe2eb ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_2d548d91c0ce075c3af9 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_af4ae872cc9a2dfbe2eb */ "dll-reference dll_af4ae872cc9a2dfbe2eb"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_2d548d91c0ce075c3af9 */ "dll-reference dll_2d548d91c0ce075c3af9"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -6832,14 +6832,14 @@ try {
 
 /***/ }),
 
-/***/ "dll-reference dll_af4ae872cc9a2dfbe2eb":
+/***/ "dll-reference dll_2d548d91c0ce075c3af9":
 /*!*******************************************!*\
-  !*** external "dll_af4ae872cc9a2dfbe2eb" ***!
+  !*** external "dll_2d548d91c0ce075c3af9" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_af4ae872cc9a2dfbe2eb;
+module.exports = dll_2d548d91c0ce075c3af9;
 
 /***/ })
 
