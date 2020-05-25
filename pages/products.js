@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import useStoreon from 'storeon/react';
 import { initialisation } from '../store/init';
 import Layout from '../components/Layout/Layout';
@@ -12,6 +13,10 @@ const Products = () => {
   const { MainProduct } = useStoreon('MainProduct');
   return (
     <Layout>
+      <Head>
+        <title>Натуральный мед в Беларуси - Вся продукция</title>
+        <meta name="description" content="Продажа настоящего меда в Беларуси - натуральный мед, готовые подарочные наборы, крем-мед и другие товары с доставкой по Гомелю и РБ"></meta>
+      </Head>
       <Header/>
       <Main>
         <SectionHeader className="SectionHeader_left">Продукция</SectionHeader>

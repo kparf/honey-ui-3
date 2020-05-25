@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import useStoreon from 'storeon/react';
 import { initialisation } from '../store/init';
 import Layout from '../components/Layout/Layout';
@@ -14,6 +15,9 @@ const DeliveryAndPayment = () => {
   const header = <SectionHeader className="SectionHeader_left">Доставка и оплата</SectionHeader>
   return (
     <Layout>
+      <Head>
+        <title>Пчёлка - магазин мёда - оплата и доставка</title>
+      </Head>
       <Header/>
       <Main property="delivery-and-payment-page">
         <MdContent

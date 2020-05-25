@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import useStoreon from 'storeon/react';
 import { initialisation } from '../store/init';
 import Layout from '../components/Layout/Layout';
@@ -19,6 +20,10 @@ const Index = () => {
 
   return (
     <Layout>
+      <Head>
+        <title>Купить мед в Гомеле - натуральный натуральный мёд</title>
+        <meta name="description" content="Магазин натурального меда в Гомеле и с доставкой по всей Беларуси. У нас можно купить настоящий, чистый, здоровый мёд, собранный с любовью "></meta>
+      </Head>
       <Header/>
       <CaruselNew property="slide" />
       <MainProducts property="MainProduct" data={MainProduct}/>

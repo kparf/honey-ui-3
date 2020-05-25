@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import useStoreon from 'storeon/react';
 import { initialisation } from '../../store/init';
 import { useRouter } from 'next/router'
@@ -16,6 +17,22 @@ const Products = () => {
   const currentProduct = products.filter(product => product.slug === slug)[0]
   return (
     <Layout>
+      {
+        (slug === 'natural') && (
+          <Head>
+            <title>Купить натуральный мед в Гомеле - Семейная пасека </title>,
+            <meta name="description" content="Купить натуральный мёд в Гомеле можно на нашей семейной пасеке по выгодным ценам. Наша команда принимает участие в различных ярмарках, вывозим пчёл на медосбор, заботимся об их здоровье. "></meta>
+          </Head>
+        )
+      }
+      {
+        (slug === 'crem') && (
+          <Head>
+                <title>Купить крем-мёд в Гомеле с доставкой</title>,
+                <meta name="description" content="Купить крем-мёд в Гомеле можно у нас на сайте с доставкой и по выгодным ценам! Фото, цены меда. Спешите заказать нежное лакомство! "></meta>
+          </Head>
+        )
+      }
       <Header/>
       <Main>
         {
