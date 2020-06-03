@@ -52,21 +52,6 @@ const MdComponent = ({ property, data, header, innerProperties = {}  }) => {
           align-items: center;
           line-height: 1.7em;
         }
-
-      `}</style>
-      <style jsx global>{`
-        .MdComponent__content h1,
-        .MdComponent__content h2,
-        .MdComponent__content h3,
-        .MdComponent__content h4,
-        .MdComponent__content h5,
-        .MdComponent__content h6 {
-          color: var(--accent-color);
-        }
-
-        .MdComponent__content a {
-          color: var(--accent-color);
-        }
       `}</style>
     </div>
   )

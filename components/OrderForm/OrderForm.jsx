@@ -136,6 +136,7 @@ const OrderForm = ({ header }) => {
 
         .form__content label {
           display: flex;
+          flex-wrap: wrap;
         }
 
         .form__label {
